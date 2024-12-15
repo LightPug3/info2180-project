@@ -1,107 +1,140 @@
-header 
-{ 
-    background-color: #000000; /* Dark blue background */ 
+/* General Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f8fc;
+    /* height: 100vh; */
+
+}
+
+/* Header Styling */
+header {
+    background-color: #000000; /* Deep blue */
+    /* color: #ffffff; */
+    /* padding: 5px 10px; */
+    /* text-align: center; */
+    /* font-size: 24px;
+    font-weight: bold; */
     padding: 10px; 
     display: flex; 
     align-items: center; 
-} 
+}
 
-
-header h1 
-{ 
+header h1 { 
     color:  rgb(129, 159, 224); 
     font-family: Arial, sans-serif; 
-    font-size: 15px; margin: 0; 
+    /* font-size: 15px; margin: 0;  */
+    font-size: 24px;
+    font-weight: bold;
 }
 
-header img 
-{ 
+header img { 
     width: 50px; /* Adjust the size of the dolphin icon */ 
-    margin-right: 10px; 
+    /* margin-right: 10px;  */
 }
 
-form label{
-    margin-right: 10px;
-    margin-bottom: 5px;
-    font-weight: bold;
-    font-style: italic;
-    text-align: left;
-}
-
-main
-{
-    text-align: center;
-}
-
-main h2
-{
-    color:  rgb(129, 159, 224); 
-    font-size: 45px;
-}
-
-form{
-    width: 80%;
-    justify-content: left;
+/* Main Section Styling */
+main {
     display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    width:80%;
-}
-
-form input{
-    padding: 5px;
-    border-radius: 5px;
-    height: 30px;
-    border: 1px solid rgb(129, 159, 224);
-    color:rgb(129, 159, 224);
-}
-
-main button{
-    padding: 10px 15px;
-    border-radius: 5px;
-    border: 1px solid rgb(129, 159, 224);
-    background-color: black;
-    color: rgb(129, 159, 224);
-    font-weight: bold;
-    width: fit-content;
-    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px);
     text-align: center;
+    position: relative;
+    /* height: 100vh; */
 }
 
-button:hover{
-    background-color: rgb(129, 159, 224);
+main h2 {
+    color:  rgb(129, 159, 224); 
+    font-size: 25px;
+}
+
+/* Container for Dolphin and Form */
+.container {
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+    /* height: 95%; */
+}
+
+/* Dolphin Image Styling */
+.background-dolphin {
+    position: absolute;
+    top: -29%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.15;
+    width: 170%;  /* Increase width to make the image larger */
+    height: 170%; /* Increase height to maintain the aspect ratio */
+    z-index: 1;
+}
+
+
+/* Form Container Styling */
+.form-container {
+    position: relative;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+/* Form Elements */
+form label {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    margin-bottom: 5px;
+    text-align: left;
+    display: block;
+    color: #003366;
+}
+
+form input {
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+form button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #003366;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    width: 100%;
+    font-size: 16px;
     cursor: pointer;
 }
 
+form button:hover {
+    background-color: #005bb5;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+/* Popup Styling */
 .popup {
     display: none;
-    position: fixed;
-    top: 120px;
-    right: 30px;
-    /*transform: translate(-50%, -50%);
-    */
+    position: relative;
+    top: 20px; /* Add some space between form and popup */
     padding: 10px;
     border-radius: 5px;
-    background-color: black;
-    color: rgb(129, 159, 224);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #003366;
+    color: #fff;
     z-index: 9999;
+    margin-top: 15px;
 }
-
-main img
-{
-    align-items: center;
-}
-
-footer{
-    display: flex;
-    margin-top: 10px;
-    color: rgb(129, 159, 224);
-    font-weight: bold;
-    background-color: black;
-    padding: 10px 20px;
-    align-items: center;
-    border-radius: 5px;
-}
-
-

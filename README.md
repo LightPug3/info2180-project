@@ -14,10 +14,9 @@
 
 - Now you have access to all the pages
 
-- Group Members: Abegail McCalla (620157646)
+- Group Members:
+Abegail McCalla (620157646)
 Shamari McPherson (620152241)
 Dontae Whitely (620157609)
 Tara Henry (620154033)
-
-
-
+Nathan Gordon (620156694)

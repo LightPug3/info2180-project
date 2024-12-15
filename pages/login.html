@@ -3,38 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/login.css">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <title>Dolphin CRM</title>
 </head>
-<!-- <header>
-    <?php include '../php/login_header.php'?>
-</header> -->
 <body id="content">
     <header>
         <img src="../images/dol2.png" alt="Dark Blue dolphin image">
         <h1>Dolphin CRM</h1>
     </header>
     <main>
-        <h2>Login</h2>
         <div class="container">
-            <form id="login-form">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <br>
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
-                <br>
-                <button type="button" onclick="submitForm()">Login</button>
-            </form>
-            <br>
-            <img src="../images/dol1.png" alt="Light Blue dolphin image">
+            <img src="../images/dol1.png" alt="Light Blue dolphin image" class="background-dolphin">
+            <div class="form-container">
+                <h2>Login</h2>
+                <form id="login-form">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <br>
+                    <button type="button" onclick="submitForm()">Login</button>
+                </form>
+            </div>
         </div>
         <div id="text" class="popup">
             <p id="result"></p>
         </div>
     </main>
-    
+    <footer>Copyright &copy; 2024 Dolphin CRM</footer>
+
     <script>
         function submitForm() {
             // Get form data
@@ -76,6 +76,5 @@
             }
         }
     </script>
-<footer> Copyright &copy 2024 Dolphin CRM</footer>
 </body>
 </html>
